@@ -6,8 +6,6 @@ phases:
       java: corretto17
   build:
     commands:
-      - echo "Running tests..."
-      - mvn test
       - echo "Building Spring Boot app..."
       - mvn clean package
 artifacts:
