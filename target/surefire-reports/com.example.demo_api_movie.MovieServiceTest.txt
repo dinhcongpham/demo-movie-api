@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo_api_movie.MovieServiceTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.507 s <<< FAILURE! -- in com.example.demo_api_movie.MovieServiceTest
+com.example.demo_api_movie.MovieServiceTest.updateMovieById_Success_WithDifferentBackgroundUrl -- Time elapsed: 0.015 s <<< ERROR!
+com.example.demo_api_movie.Exception.BadRequestException: Background Image is not valid
+	at com.example.demo_api_movie.MovieService.MovieService.getKeyS3ByFullUrl(MovieService.java:121)
+	at com.example.demo_api_movie.MovieService.MovieService.updateMovieById(MovieService.java:78)
+	at com.example.demo_api_movie.MovieServiceTest.updateMovieById_Success_WithDifferentBackgroundUrl(MovieServiceTest.java:190)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

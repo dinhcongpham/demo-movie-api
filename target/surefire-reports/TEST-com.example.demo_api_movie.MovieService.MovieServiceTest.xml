@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.demo_api_movie.DemoApiMovieApplicationTests" time="12.14" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.539" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -66,49 +66,14 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[demo-api-movie] "/>
   </properties>
-  <testcase name="contextLoads" classname="com.example.demo_api_movie.DemoApiMovieApplicationTests" time="0.364">
-    <system-out><![CDATA[18:40:09.722 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo_api_movie.DemoApiMovieApplicationTests]: DemoApiMovieApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-18:40:09.880 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo_api_movie.DemoApiMovieApplication for test class com.example.demo_api_movie.DemoApiMovieApplicationTests
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::                (v3.5.6)
-
-2025-10-28T18:40:10.449+07:00  INFO 17084 --- [demo-api-movie] [           main] c.e.d.DemoApiMovieApplicationTests       : Starting DemoApiMovieApplicationTests using Java 23 with PID 17084 (started by phamd in E:\Intellij-Java-Projects\Tutorial_hell_pj\demo-api-movie)
-2025-10-28T18:40:10.449+07:00  INFO 17084 --- [demo-api-movie] [           main] c.e.d.DemoApiMovieApplicationTests       : No active profile set, falling back to 1 default profile: "default"
-2025-10-28T18:40:11.286+07:00  INFO 17084 --- [demo-api-movie] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-28T18:40:11.385+07:00  INFO 17084 --- [demo-api-movie] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 8 JPA repository interfaces.
-2025-10-28T18:40:11.998+07:00  INFO 17084 --- [demo-api-movie] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-28T18:40:12.061+07:00  INFO 17084 --- [demo-api-movie] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-28T18:40:12.134+07:00  INFO 17084 --- [demo-api-movie] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-28T18:40:12.523+07:00  INFO 17084 --- [demo-api-movie] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-28T18:40:12.557+07:00  INFO 17084 --- [demo-api-movie] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-10-28T18:40:13.906+07:00  INFO 17084 --- [demo-api-movie] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1acc873b
-2025-10-28T18:40:13.906+07:00  INFO 17084 --- [demo-api-movie] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-10-28T18:40:14.264+07:00  INFO 17084 --- [demo-api-movie] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 16.10
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-10-28T18:40:15.325+07:00  INFO 17084 --- [demo-api-movie] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-28T18:40:18.638+07:00  INFO 17084 --- [demo-api-movie] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-28T18:40:19.032+07:00  INFO 17084 --- [demo-api-movie] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-10-28T18:40:20.746+07:00  WARN 17084 --- [demo-api-movie] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-28T18:40:21.294+07:00  INFO 17084 --- [demo-api-movie] [           main] c.e.d.DemoApiMovieApplicationTests       : Started DemoApiMovieApplicationTests in 11.192 seconds (process running for 12.353)
-]]></system-out>
-    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
-WARNING: A Java agent has been loaded dynamically (C:\Users\phamd\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
-]]></system-err>
-  </testcase>
+  <testcase name="deleteMovie_shouldDeleteAndRemoveS3File" classname="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.404"/>
+  <testcase name="createMovie_shouldSaveAndReturnDto" classname="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.089"/>
+  <testcase name="getMovieById_shouldReturnDto_whenFound" classname="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.003"/>
+  <testcase name="getMovieById_shouldThrowNotFound_whenMissing" classname="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.009"/>
+  <testcase name="createMovie_shouldThrowNotFound_ifGenreMissing" classname="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.003"/>
+  <testcase name="deleteMovie_shouldThrow_whenNotFound" classname="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.0"/>
+  <testcase name="getKeyS3ByFullUrl_shouldThrowException_ifNull" classname="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.009"/>
+  <testcase name="getKeyS3ByFullUrl_shouldReturnLastPart" classname="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.004"/>
+  <testcase name="getKeyS3ByFullUrl_shouldReturnEmpty_ifEmptyString" classname="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.003"/>
+  <testcase name="updateMovie_shouldReplaceBackground_whenChanged" classname="com.example.demo_api_movie.MovieService.MovieServiceTest" time="0.006"/>
 </testsuite>

@@ -113,13 +113,11 @@ public class MovieService {
         movieRepository.deleteById(id);
     }
 
-    private String getKeyS3ByFullUrl (String url) {
+    private String getKeyS3ByFullUrl(String url) {
         String[] pieces = url.split("/");
-        if (pieces.length == 4)
-            return pieces[3];
-        else {
+        if (pieces.length == 0)
             throw new BadRequestException("Background Image is not valid");
-        }
+        return pieces[pieces.length - 1]; // always last part
     }
 
     private MovieDto toDto(Movie movie) {
